@@ -1,0 +1,2 @@
+# fish
+FiSH Shell Config
