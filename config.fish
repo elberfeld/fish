@@ -121,5 +121,3 @@
     set_color normal
 end
 
-cd /vagrant/
-
