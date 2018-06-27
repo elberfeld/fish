@@ -59,11 +59,7 @@
 
 	
     set_color $retc
-    if [ $tty = tty ]
-        echo -n .-
-    else
-        echo -n '┬─'
-    end
+    echo -n '┬─'
     set_color -o green
     echo -n [
     if test $USER = root -o $USER = toor
@@ -103,21 +99,13 @@
     set_color normal
     for job in (jobs)
         set_color $retc
-        if [ $tty = tty ]
-            echo -n '; '
-        else
-            echo -n '│ '
-        end
+        echo -n '│ '
         set_color brown
         echo $job
     end
     set_color normal
     set_color $retc
-    if [ $tty = tty ]
-        echo -n "'->"
-    else
-        echo -n '╰─>'
-    end
+    echo -n '╰─> '
     set_color normal
 end
 
