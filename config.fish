@@ -1,4 +1,4 @@
-﻿function fish_prompt
+function fish_prompt
         and set retc green; or set retc red
     tty|string match -q -r tty; and set tty tty; or set tty pts
 
@@ -107,5 +107,5 @@
     set_color $retc
     echo -n '╰─> '
     set_color normal
-
+end
 
